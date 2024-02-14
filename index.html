@@ -10,53 +10,112 @@
       .banner-image {
         width: 128px;
         height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: thick double #fffffe;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      body {
+        background-color: #3da9fc;
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 255), rgba(255,255,255));
+      }
+      .name { 
+        color: #094067;
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 35px;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: #fffffe;
+        font-family: 'Cabin', sans-serif;
+        font-size: 16px;
+      }
+      .link {
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: thick double #fffffe;
+      }
+      .link a {
+        color: #094067;
+        text-decoration: wavy;
+        text-align: center;
+        flex-grow: 1;
+        font-family: 'Cabin', sans-serif;
+        font-size: 16px;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 550px;
+        flex-grow: 1;
       }
     </style>
   </head>
   <body>
-    <div class="banner">
-      <img src="/Thumbnails/D1049ACB-A9CD-4923-9A83-7ABBFB297BA1.jpeg" alt="Felix in Car" class="banner-image">
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="/Thumbnails/D1049ACB-A9CD-4923-9A83-7ABBFB297BA1.jpeg" alt="Felix in Car" class="banner-image">
+      </div>
 
-    <div class="name">
-      Felix Imbanga
-    </div>
+      <div class="name">
+        Felix Imbanga
+      </div>
 
-    <div class="social-icons">
-      <a href="https://github.com/Feelo31" target="_blank">
-        github
-      </a>
-      <a href="https://www.linkedin.com/in/feelo31/" target="_blank">
-        linkedin
-      </a>
-      <a href="https://www.instagram.com/feelo03/" target="_blank">
-        instagram
-      </a>
-      <a href="https://twitter.com/Feelo31_03" target="_blank">
-        twitter
-      </a>
-      <a href="https://www.facebook.com/felix.godia/" target="_blank">
-        facebook
-      </a>
-    </div>
-    <div class="link">
-      <img src="/Thumbnails/Well-rounded.jpeg" alt="hole with round sky">
-      <a target="_blank" href="https://www.donnywals.com/five-tips-to-help-you-become-a-well-rounded-developer/">
-      Five tips to help you become a well rounded developer - Donny Wals</a>
-    </div>
-    <div class="link">
-      <img src="/Thumbnails/Portfolio.jpeg" alt="computer coding">
-      <a target="_blank" href="https://www.codecademy.com/resources/blog/technical-portfolio-guide-tips/">How to build a technical portfolio - Kelly M.</a>
-    </div>
-    <div class="link">
-      <img src="/Thumbnails/Gods-Will.jpeg" alt="light coming from the sky">
-      <a target="_blank" href="https://www.eng.auburn.edu/~sjreeves/cm/godswill.html#:~:text=God's%20will%20of%20precept%3A,James%204%3A17%2C%20Matt.">Discerning Gods Will in your life</a>
-    </div>
-    <div class="link">
-      <img src="/Thumbnails/Self-Reflection.jpeg" alt="siver bowl">
-      <a target="_blank" href="https://www.berries.com/blog/self-reflection-questions">40 Thoughtful self-reflection questions
-        - Brandon Gaille</a>
-    </div>
-
+      <div class="social-icons">
+        <a href="https://github.com/Feelo31" target="_blank">
+          Github
+        </a>
+        <a href="https://www.linkedin.com/in/feelo31/" target="_blank">
+          Linkedin
+        </a>
+        <a href="https://www.instagram.com/feelo03/" target="_blank">
+          Instagram
+        </a>
+        <a href="https://twitter.com/Feelo31_03" target="_blank">
+          Twitter
+        </a>
+        <a href="https://www.facebook.com/felix.godia/" target="_blank">
+          Facebook
+        </a>
+      </div>
+      <div class="link">
+        <img src="/Thumbnails/Well-rounded.jpeg" alt="hole with round sky" class="thumbnail">
+        <a target="_blank" href="https://www.donnywals.com/five-tips-to-help-you-become-a-well-rounded-developer/">
+        Five tips to help you become a well rounded developer - Donny Wals</a>
+      </div>
+      <div class="link">
+        <img src="/Thumbnails/Portfolio.jpeg" alt="computer coding" class="thumbnail">
+        <a target="_blank" href="https://www.codecademy.com/resources/blog/technical-portfolio-guide-tips/">How to build a technical portfolio - Kelly M.</a>
+      </div>
+      <div class="link">
+        <img src="/Thumbnails/Gods-Will.jpeg" alt="light coming from the sky" class="thumbnail">
+        <a target="_blank" href="https://www.eng.auburn.edu/~sjreeves/cm/godswill.html#:~:text=God's%20will%20of%20precept%3A,James%204%3A17%2C%20Matt.">Discerning Gods Will in your life</a>
+      </div>
+      <div class="link">
+        <img src="/Thumbnails/Self-Reflection.jpeg" alt="siver bowl" class="thumbnail">
+        <a target="_blank" href="https://www.berries.com/blog/self-reflection-questions">40 Thoughtful self-reflection questions
+          - Brandon Gaille</a>
+      </div>
+    </div>  
   </body>
 </html>
